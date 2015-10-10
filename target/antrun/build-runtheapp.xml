@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="runtheapp"  >
+<target name="runtheapp">
+  <ant antfile="build.xml"/>
+  <delete>
+    <fileset dir="C:\Users\hanifama/.m2/repository/com/google/collections"/>
+  </delete>
+  <exec dir="C:\Selenium_Maven\Maven_Projects\EMFQC_MAVEN" executable="C:\Selenium_Maven\Maven_Projects\EMFQC_MAVEN/testrunner.bat" failonerror="true">
+    <arg line=""/>
+  </exec>
+</target>
+</project>
